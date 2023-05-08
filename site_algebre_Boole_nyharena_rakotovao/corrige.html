@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="fr" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style2.css">
+    <script type="text/javascript" src="js/fonctions.js"></script>
+    <title>Algèbre de Boole</title>
+  </head>
+
+  <body>
+
+    <div id="bandeau">
+      <p>Algèbre de Boole</p>
+    </div>
+
+    <div id="menu">
+      <a href="index.html">Georges Boole</a><br><br>
+      <a href="operateurs.html">Opérateurs booléens</a><br><br>
+      <a href="exercices.html">Exercices</a><br><br>
+      <a href="site_web_statique.html">Le site web statique</a><br><br>
+      <a href="corrige.html">Corrigé</a><br>
+
+    </div>
+
+    <div id="contenu">
+      <ol>
+        <p>1. le résultat de l'expression booléenne S = NON(1 ET 0) OU 1 est VRAI, true</p>
+        <p>2. le résultat de l'expression booléenne S = 1 ET (0 OU NON(1 ET 1)) est FAUX , false.</p>
+        <p>3. le résultat de l'expression booléenne S = NON ((1 OU 0) ET (1 XOU 0)) est FAUX , false.</p>
+        <p>4. </p>
+        <table>
+          <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>A ET B</th>
+            <th>NON(A ET B)</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+        </table>
+        <p>
+          A = <input id="q4_A" type="text" name="" value="0" size="2">
+          B =  <input id="q4_B" type="text" name="" value="0" size="2">
+          <button type="button" name="button" onclick="calcul_q4()">S=</button>
+          <output id="q4_S" name="result">?</output>
+        </p>
+        <p>5.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>A</th>
+              <th>B</th>
+              <th>C</th>
+              <th>NON(A ET B)</th>
+              <th>NON(A ET B) OU C</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          A = <input id="q5_A" type="text" name="" value="0" size="2">
+          B =  <input id="q5_B" type="text" name="" value="0" size="2">
+          C =  <input id="q5_C" type="text" name="" value="0" size="2">
+          <button type="button" name="button" onclick="calcul_q5()">S=</button>
+          <output id="q5_S" name="result">?</output>
+        </p>
+      </ol>
+    </div>
+
+  </body>
+
+</html>

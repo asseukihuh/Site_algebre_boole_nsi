@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="fr" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style2.css">
+    <script type="text/javascript" src="js/fonctions.js"></script>
+    <title>Algèbre de Boole</title>
+  </head>
+
+  <body>
+
+    <div id="bandeau">
+      <p>Algèbre de Boole</p>
+    </div>
+
+    <div id="menu">
+      <a href="index.html">Georges Boole</a><br><br>
+      <a href="operateurs.html">Opérateurs booléens</a><br><br>
+      <a href="exercices.html">Exercices</a><br><br>
+      <a href="site_web_statique.html">Le site web statique</a><br><br>
+      <a href="corrige.html">Corrigé</a><br>
+    </div>
+
+    <div id="contenu">
+      <ol>
+        <li>Commencer par répondre aux questions contenues dans la page dédiée au site web statique.</li>
+        <li>Calculer le résultat de l'expression booléenne S = NON(1 ET 0) OU 1.</li>
+        <li>Calculer le résultat de l'expression booléenne S = 1 ET (0 OU NON(1 ET 1)).</li>
+        <li>Calculer le résultat de l'expression booléenne S = NON ((1 OU 0) ET (1 XOU 0)).</li>
+        <li>Dresser la table de vérité de l'opérateur NON-ET (NAND).<br>
+          Il correspond à l'expression booléenne S = NON(A ET B).
+        </li>
+        <li>Dresser la table de vérité à trois entrées de NON(A ET B) OU C.</li>
+        <li>Ajouter une page au site donnant le corrigé de ces cinq questions.
+          <ul>
+            <li>Pour cela il suffit de dupliquer le fichier correspondant à cette page.</li>
+            <li>Le renommer en "corrige.html".</li>
+            <li>D'éditer la nouvelle page et effacer le contenu de balise &lt;div&gt; avec l'id "contenu".</li>
+            <li>Ajouter une balise &lt;a&gt; "Corrigé" pointant sur le fichier corrige.html dans le menu de toutes les pages.</li>
+            <li>Pour les questions 5 et 6 on contruira un tableau HTML.</li>
+            <li>Pour la question 5 on utilisera aussi la fonction javascript proposée comme dans l'exemple ci-dessous.
+              <p>
+                A = <input id="q4_A" type="text" name="" value="0" size="2">
+                B =  <input id="q4_B" type="text" name="" value="0" size="2">
+                <button type="button" name="button" onclick="calcul_q4()">S=</button>
+                <output id="q4_S" name="result">?</output>
+              </p>
+            </li>
+            <li>Pour la question 6 on ajoutera la fonction javascript correspondante.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+  </body>
+
+</html>
